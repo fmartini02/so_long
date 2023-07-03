@@ -1,0 +1,29 @@
+/* XPM */
+static char *s70g595UmWT_png[] = {
+/* columns rows colors chars-per-pixel */
+"96 16 7 1 ",
+"  c None",
+". c #060608",
+"X c #AC3232",
+"o c #DF7126",
+"O c #847E87",
+"+ c #9BADB7",
+"@ c white",
+/* pixels */
+"                                                                                                ",
+"     ...             ...                                               .               .        ",
+"     .XX.            .XX.            ...             ...             ..X.            ..X.       ",
+"      .O....          .O....         .XX.            .XX.            .XO....         .XO....    ",
+"     .OO++++.        .OO++++.         .O....          .O....         .OO++++.        .OO++++.   ",
+"    .O++++++.       .O++++++.        .OO++++.        .OO++++.       .O++++++.       .O++++++.   ",
+"    .++@@@@@.       .++@@@@@.       .O++++++.       .O++++++.       .+++++++.       .+++++++.   ",
+"    .++@.....       .++@.....       .++@@@@@.       .++@@@@@.       .++@@@@@.       .++@@@@@.   ",
+"    .O+@@@.@.       .O+@@@.@.       .++@.....       .++@.....       .O+@.....       .O+@.....   ",
+"    ..OOXXoX.       ..OOXXoX.       .O+@@@.@.       .O+@@@.@.       ..O@@@.@.       ..O@@@.@.   ",
+"     .XXOOOO.        .XXOOOO.       ..XXXXoX.       ..XXXXoX.        .XXXXoX.        .XXXXoX.   ",
+"   XX.OO++++.       X.OO++++.        .OOOOOO.        .OOOOOO.       X.OOOOOO.       X.OOOOOO.   ",
+"   XX.OO...O.      XX.OO...O.       X.OO...O.       X.OO...O.       X.OO...O.       X.OO...O.   ",
+"    X.O.X.O.       XX.O.X.O.       XX.O.X.O.       XX.O.X.O.       XX.O.X.O.       XX.O.X.O.    ",
+"     ..  ..          ..  ..          ..  ..          ..  ..          ..  ..          ..  ..     ",
+"                                                                                                "
+};

@@ -1,0 +1,28 @@
+/* XPM */
+static char *s70yD1aic7K_png[] = {
+/* columns rows colors chars-per-pixel */
+"96 16 6 1 ",
+"  c None",
+". c black",
+"X c #33703B",
+"o c #37773F",
+"O c #3E8948",
+"+ c #62B76D",
+/* pixels */
+"                                                                                                ",
+"                                                                                                ",
+"                                                                                                ",
+"     ......          ......          ......          ......                                     ",
+"   ..XOOOOX..      ..XOOOOX..      ..XOOOOX..      ..XOOOOX..        ......          ......     ",
+"  .XXOOOOOOXX.    .XXOOOOOOXX.    .XXOOOOOOXX.    .XXOOOOOOXX.     ..XOOOOX..      ..XOOOOX..   ",
+" .XOOOOOOOOOOX.  .XOOOOOOOOOOX.  .XOOOOOOOOOOX.  .XOOOOOOOOOOX.   .XXOOOOOOXX.    .XXOOOOOOXX.  ",
+".XOO++OOOOOOOOX..XOO++OOOOOOOOX..XOO++OOOOOOOOX..XOO++OOOOOOOOX. .XOOOOOOOOOOX.  .XOOOOOOOOOOX. ",
+".OO++OOOOOOOOOO..OO++OOOOOOOOOO..OO++OOOOOO..OO..OO++OOOOOO..OO..XOO++OOOOOOOOX..XOO++OOOOOOOOX.",
+".OOOooooooo..OO..OOOooooooo..OO..OOOoo..ooo..OO..OOOoo..ooo..OO..OO++OOOOOO..OO..OO++OOOOOO..OO.",
+".Ooooo..ooo..oO..Ooooo..ooo..oO..Ooooo..ooooooO..Ooooo..ooooooO..Ooooo..ooo..oO..Ooooo..ooo..oO.",
+".Xoooo..ooooooX..Xoooo..ooooooX..XooooooooooooX..XooooooooooooX..Xoooo..ooooooX..Xoooo..ooooooX.",
+" .XXooooooooXX.  .XXooooooooXX.  .XXooooooooXX.  .XXooooooooXX.  .XXooooooooXX.  .XXooooooooXX. ",
+"  ..XooooooX..    ..XooooooX..    ..XooooooX..    ..XooooooX..    ..XooooooX..    ..XooooooX..  ",
+"    ........        ........        ........        ........        ........        ........    ",
+"                                                                                                "
+};

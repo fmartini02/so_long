@@ -1,0 +1,28 @@
+/* XPM */
+static char *s70LerAT9UI_xpm[] = {
+/* columns rows colors chars-per-pixel */
+"96 16 6 1 ",
+"  c None",
+". c black",
+"X c #33703B",
+"o c #37773F",
+"O c #3E8948",
+"+ c #62B76D",
+/* pixels */
+"                                                                                                ",
+"                                                                                                ",
+"                                                                                                ",
+"     ......          ......                                                                     ",
+"   ..XOOOOX..      ..XOOOOX..                                        ........        ........   ",
+"  .XXOOOOOOXX.    .XXOOOOOOXX.       ......          ......        ..XOOOOOOX.     ..XOOOOOOX.  ",
+" .XOOOOOOOOOOX.  .XOOOOOOOOOOX.    ..XOOOOX..      ..XOOOOX..     .XXOOOOOOOOX.   .XXOOOOOOOOX. ",
+".XOO++OOOOOOOOX..XOO++OOOOOOOOX.  .XXOOOOOOXX.    .XXOOOOOOXX.   .XOOOOOOOOOOOX. .XOOOOOOOOOOOX.",
+".OO++OOOOOO..OO..OO++OOOOOO..OO. .XO++OOOOOOOX.  .XO++OOOOOOOX. .XOO++OOOOOOOOO..XOO++OOOOOOOOO.",
+".OOOoo..ooo..OO..OOOoo..ooo..OO..XO++oooooo..OX..XO++oooooo..OX..OO++oooooo..OO..OO++oooooo..OO.",
+".Ooooo..ooooooO..Ooooo..ooooooO..Ooooo..ooo..oO..Ooooo..ooo..oO..Ooooo..ooo..oO..Ooooo..ooo..oO.",
+".XooooooooooooX..XooooooooooooX..Xoooo..ooooooX..Xoooo..ooooooX..Xoooo..ooooooX..Xoooo..ooooooX.",
+" .XXooooooooXX.  .XXooooooooXX.  .XXooooooooXX.  .XXooooooooXX.  .XXooooooooXX.  .XXooooooooXX. ",
+"  ..XooooooX..    ..XooooooX..    ..XooooooX..    ..XooooooX..    ..XooooooX..    ..XooooooX..  ",
+"    ........        ........        ........        ........        ........        ........    ",
+"                                                                                                "
+};

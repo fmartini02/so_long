@@ -6,46 +6,62 @@
 /*   By: fmartini <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/31 15:19:33 by fmartini          #+#    #+#             */
-/*   Updated: 2023/05/31 15:20:03 by fmartini         ###   ########.fr       */
+/*   Updated: 2023/06/29 19:41:22 by fmartini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdio.h>
-#include<fcntl.h>
-#include"get_next_line.h"
-#include"so_long.h"
+#include <stdio.h>
+#include <fcntl.h>
+#include "so_long.h"
 
-
-char	**get_map(t_vars *vars, int fd_map)
+int	ft_check_nwline(char *s)
 {
-	char	*riga;
-	int	r;
 	int	i;
-	int	new_fd;
-	
-	r = 0;
-	while(riga = get_next_line(fd_map))
-		r++;
-	vars->map = (char **) malloc((r + 1) * sizeof(char *));
-		i = 0;
-	close(fd_map);
-	new_fd = open("./mappa.ber", O_RDONLY);
-	while (i < r)
+	int	c;
+
+	i = 0;
+	c = 0;
+	while (s[i])
 	{
-		riga = get_next_line(fd_map);
-		vars->map[i++] = riga;
+		if (s[i] == '\n')
+		{
+			c++;
+			i++;
+		}
+		else if (c >= 2)
+			return (0);
+		else if (s[i] != '\n')
+		{
+			c = 0;
+			i++;
+		}
 	}
-	vars.map[i] =NULL;
-	return(vars.map);
+	return (1);
 }
 
-/*int	main()
+void	get_map(t_vars *vars, int fd_map)
 {
-	int fd = open("./mappa.ber", O_RDONLY);
-	vars.map = get_map(fd);
-	int	i;
-	
-	i = 0;
-	while(vars.map[i])
-		printf("%s",vars.map[i++]);
-}*/
+	char	*t;
+	char	*s;
+
+	s = ft_calloc(1, 1);
+	while (1)
+	{
+		t = get_next_line(fd_map);
+		if (t == NULL)
+		{
+			close(fd_map);
+			break ;
+		}
+		s = ft_strjoin_free(s, t);
+		free(t);
+	}
+	if (!(ft_check_nwline(s)))
+		ft_free_init(vars, s);
+	vars->map = ft_split(s, '\n');
+	vars->temp = ft_split(s, '\n');
+	if(vars->map == NULL || vars->temp == NULL)
+		ft_free_init(vars, s);
+	free(s);
+	ft_check_file_map(vars);
+}

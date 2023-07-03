@@ -1,0 +1,31 @@
+/* XPM */
+static char *s70xydUePh8_png[] = {
+/* columns rows colors chars-per-pixel */
+"96 16 9 1 ",
+"  c None",
+". c #040406",
+"X c #060608",
+"o c #565258",
+"O c #AC3232",
+"+ c #DF7126",
+"@ c #847E87",
+"# c #9BADB7",
+"$ c #FFFFFF",
+/* pixels */
+"                       X                                               X                        ",
+"     XXX             XXOX              X             XXX             XXOX              X        ",
+"     XOOX            XO@XXXX         XXOX            XOOX            XO@XXXX         XXOX       ",
+"      X@XXXX         X@@####X        XO@XXXX          X@XXXX         X@@####X        XO@XXXX    ",
+"     X@@####X       X@#$$$$$X        X@@####X        X@@####X       X@#$$$$$X        X@@####X   ",
+"    X@######X       X##$XXXXX       X@#$$$$$X       X@######X       X##$XXXXX       X@#$$$$$X   ",
+"    X##$$$$$X       X##$$$X$X       X##$XXXXX       X##$$$$$X       X##$$$X$X       X##$XXXXX   ",
+"    X##$XXXXX       X@###$$$X       X##$$$X$X       X##$XXXXX       X@###$$$X       X##$$$X$X   ",
+"    X@#$$$X$X        X@@OO+OX       X@###$$$X       X@#$$$X$X        X@@OO+OX       X@###$$$X   ",
+"     X@@OO+OX       OXOO@@@@X        X@@OO+OX        X@@OO+OX        XOO@@@@X        X@@OO+OX   ",
+"    OXOO@@@@X     OOOX@@####@X      OXOO@@@@X       OXOO@@@@X       OX@@@@@@X      OOXOO@@@@X   ",
+"  OOOX@@####X      OX@@XXXXX@X    OOX@@#####X     OOOX@@####X      OOX@@####X     OOOX@@@###X   ",
+"   OOX@@XXXX        XXX     ..     OXXXXXXX@.      OOOXXXXX@.     OOOOXXXXXX          X@@XXX    ",
+"     X@.                                   ..            .o.                           Xo.      ",
+"     ..                                                  ..                             ..      ",
+"                                                                                                "
+};

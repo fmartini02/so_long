@@ -6,51 +6,68 @@
 /*   By: fmartini <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/05 17:39:05 by fmartini          #+#    #+#             */
-/*   Updated: 2023/06/05 17:39:11 by fmartini         ###   ########.fr       */
+/*   Updated: 2023/06/23 16:28:29 by fmartini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"so_long.h"
-
-void	put_image(t_vars *vars)
-{
-	int	x;
-	int	y;
-	
-	x = 0;
-	y = 0;
-	vars->img = mlx_xpm_file_to_image(vars->mlx, vars->img, vars->x, vars->y);
-	mlx_put_image_to_window(vars->mlx, vars->win, vars->img, x, y);
-}
+#include "so_long.h"
 
 void	tex_loading(t_vars *vars)
 {
-	int	i;
-	int	j;
-	
-	i = 0;
-	j = 0;
-	while (vars->map[i][j])
+	int	y;
+	int	x;
+
+	y = 0;
+	x = 0;
+	ft_put_tex(vars);
+	while (y < vars->win_h)
 	{
-		while(vars->map[i][j] != '\0' && vars->map[i][j] !='\n')
+		while (vars->map[y][x] != '\0' && vars->map[y][x] != '\n')
 		{
-			if (vars->map[i][j] == 'P')
-				put_img(vars, "texture/knight_idle_anim_f0.xpm");
-			else if(vars->map[i][j] == 'C')
-				put_img(vars, "texture/weapon_sword_1.xpm");
-			else if(vars->map[i][j] == '0')
-				put_img(vars, "texture/wall_crack.xpm");
-			else if(vars->map[i][j] == '1')
-				put_img(vars, "texture/floor_1.xpm");
-			else if(vars->map[i][j] == 'E')
-				put_img(vars, "texture/slime_idle_anim_f0.xpm");
-			else
-				free_all();
-			j++;
+			if (vars->map[y][x] == 'P')
+				ft_put_pla(vars, y, x);
+			else if (vars->map[y][x] == 'C')
+				ft_put_coll(vars, y, x);
+			else if (vars->map[y][x] == 'N')
+				ft_put_ene(vars, y, x);
+			x++;
 		}
-		i++;
-		j = 0;
+		y++;
+		x = 0;
+	}
+	tex_loading_else(vars);
+}
+
+void	tex_loading_else(t_vars *vars)
+{
+	int	y;
+	int	x;
+
+	y = 0;
+	x = 0;
+	while (y < vars->win_h)
+	{
+		while (vars->map[y][x] != '\0' && vars->map[y][x] != '\n')
+		{
+			if (vars->map[y][x] == 'E')
+				ft_put_exit(vars, y, x);
+			else if (vars->map[y][x] == '1')
+				ft_put_wall(vars, y, x);
+			else if (vars->map[y][x] == '0')
+				ft_put_flo(vars, y, x);
+			x++;
+		}
+		y++;
+		x = 0;
 	}
 }
 
-	
+void	ft_put_pla(t_vars *vars, int y, int x)
+{
+	mlx_put_image_to_window(vars->mlx, vars->win, vars->pla, x * 16, y * 16);
+}
+
+void	ft_put_flo(t_vars *vars, int y, int x)
+{
+	mlx_put_image_to_window(vars->mlx, vars->win, vars->flo, x * 16, y * 16);
+}
