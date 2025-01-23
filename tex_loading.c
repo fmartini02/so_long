@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   tex_loading.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fmartini <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: francema <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/05 17:39:05 by fmartini          #+#    #+#             */
-/*   Updated: 2023/06/23 16:28:29 by fmartini         ###   ########.fr       */
+/*   Updated: 2025/01/22 18:03:34 by francema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,4 +70,13 @@ void	ft_put_pla(t_vars *vars, int y, int x)
 void	ft_put_flo(t_vars *vars, int y, int x)
 {
 	mlx_put_image_to_window(vars->mlx, vars->win, vars->flo, x * 16, y * 16);
+}
+
+void	ft_mlx_initer(t_vars *vars)
+{
+	vars->mlx = mlx_init();
+	vars->win = mlx_new_window(vars->mlx, (vars->win_w * 16),
+			(vars->win_h * 16), "mlx_42");
+	mlx_hook(vars->win, 2, 1L << 0, ft_move, vars);
+	mlx_hook(vars->win, 17, 0, nuke_mem, vars);
 }

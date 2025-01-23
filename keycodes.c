@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   keycodes.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fmartini <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: francema <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/14 15:51:04 by fmartini          #+#    #+#             */
-/*   Updated: 2023/06/23 18:19:44 by fmartini         ###   ########.fr       */
+/*   Updated: 2025/01/22 18:45:45 by francema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,14 @@ int	ft_movement(t_vars *vars, int keycode)
 	return (1);
 }
 /*100 = d 115 = s 97 = a 119 = w*/
+void	ft_check_exit(t_vars *vars)
+{
+	if (vars->num_c == 0)
+	{
+		ft_printf("BRAVOOO!!!\n");
+		nuke_mem(vars);
+	}
+}
 
 int	ft_move(int keycode, t_vars *vars)
 {
